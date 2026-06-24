@@ -3,142 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="护青公益计划 · 免费为全国青少年身心疗愈 · 心育六司">
+  <meta name="description" content="城隍护青·青少年身心康宁公益计划，免费为全国及全球青少年调理焦虑抑郁问题。">
   <title>护青公益 · 城隍法脉</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#F5F0EB">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap');</style>
 </head>
 <body>
-
-  <nav class="nav-bar">
+  <nav>
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">☯ 城隍法脉</a>
-      <button class="nav-toggle" aria-label="菜单">☰</button>
+      <a href="index.html" class="nav-brand">城隍<span>法脉</span></a>
+      <button class="nav-toggle">☰</button>
       <ul class="nav-links">
         <li><a href="index.html">首页</a></li>
-        <li><a href="all-si.html">四十二司</a></li>
+        <li><a href="all-si.html">二十一司</a></li>
         <li><a href="about.html">认识法脉</a></li>
         <li><a href="protect-youth.html" class="active">护青公益</a></li>
         <li><a href="rituals.html">功课仪轨</a></li>
-        <li><a href="prayer-generator.html">祈请文生成</a></li>
+        <li><a href="prayer-generator.html">祈请文</a></li>
         <li><a href="contact.html">关于</a></li>
       </ul>
     </div>
   </nav>
 
-  <section class="page-header">
-    <h1>🌱 护青公益计划</h1>
-    <p>免费为全国、全球青少年身心疗愈 · 四十二司护法加持</p>
-  </section>
+  <main>
+    <div class="container">
+      <div class="page-header fade-in">
+        <h1>护青 · 青少年身心康宁公益计划</h1>
+        <p>免费为全国及全球青少年调理焦虑抑郁问题</p>
+      </div>
 
-  <div class="container section">
-    <!-- 三不原则 -->
-    <h2 class="section-title">📌 三不原则</h2>
-    <div class="principles">
-      <div class="principle-card">
-        <div class="principle-num">一</div>
-        <h4>不收费</h4>
-        <p>一切疗愈完全免费<br>不取分文</p>
+      <!-- 缘起 -->
+      <div class="card card-gold fade-in">
+        <h3 class="section-title"><span class="icon">🌱</span>缘起</h3>
+        <p style="line-height:2">
+          中高考加持圆满后，不少家长找到我们，说孩子不光是考试紧张，是长期焦虑、抑郁、睡不着、不想上学。
+        </p>
+        <p style="line-height:2;margin-top:var(--space-sm)">
+          城隍法脉有二十一司护法，有铁一锤调理手法，有发心纯正的同修。我们发愿：<strong>免费为全国及全球青少年调理焦虑抑郁问题</strong>。
+        </p>
+        <p style="line-height:2;margin-top:var(--space-sm);color:var(--gold);font-weight:600">
+          这不是一个商业项目，也不是一个组织，更不是要取代医院。这是一个愿。
+        </p>
       </div>
-      <div class="principle-card">
-        <div class="principle-num">二</div>
-        <h4>不问来处</h4>
-        <p>不分国籍、信仰、背景<br>来者不拒</p>
+
+      <!-- 三不原则 -->
+      <h3 class="section-title" style="margin-top:var(--space-lg)"><span class="icon">📌</span>三不原则</h3>
+      <div class="principle-three">
+        <div class="principle-card fade-in">
+          <div class="icon">🚫</div>
+          <h3>不叫治疗</h3>
+          <p>做的是身心调理、情绪疏导、能量护持，不是医疗行为。绝不触碰医疗红线。</p>
+        </div>
+        <div class="principle-card fade-in">
+          <div class="icon">💰</div>
+          <h3>不收费用</h3>
+          <p>纯公益。项目本身对受助家庭全免费。这是铁律。</p>
+        </div>
+        <div class="principle-card fade-in">
+          <div class="icon">🏥</div>
+          <h3>不替代医疗</h3>
+          <p>有自杀倾向、重度抑郁已服药的，必须转介医院。远程加持只作辅助。</p>
+        </div>
       </div>
-      <div class="principle-card">
-        <div class="principle-num">三</div>
-        <h4>不涉组织</h4>
-        <p>不隶属任何宗教组织<br>纯公益行为</p>
+
+      <!-- 心育六司 -->
+      <h3 class="section-title" style="margin-top:var(--space-lg)"><span class="icon">❤️</span>心育六司</h3>
+      <p style="color:var(--text-light);margin-bottom:var(--space-md);font-size:0.9rem">
+        二十一司中重点聚焦六大司，针对青少年焦虑抑郁的核心症结
+      </p>
+      <div class="heart-six" id="heart-six-grid">
+        <!-- 由JS动态加载 -->
       </div>
+
+      <!-- 三种服务方式 -->
+      <h3 class="section-title" style="margin-top:var(--space-lg)"><span class="icon">🤝</span>三种服务方式</h3>
+      <div class="grid grid-2" style="margin-bottom:var(--space-md)">
+        <div class="card card-silver fade-in">
+          <h3 style="margin-bottom:var(--space-xs)">远程护持</h3>
+          <p style="color:var(--text-light);font-size:0.85rem;margin-bottom:var(--space-sm)">覆盖面最广</p>
+          <p style="line-height:1.8">家长报名 → 登记信息 → 城隍使者入案分配专属编号 → 每日回向文中列入名单 → 每月朔望日大回向 → 每周跟踪家长反馈。全程无需见面。</p>
+        </div>
+        <div class="card card-silver fade-in">
+          <h3 style="margin-bottom:var(--space-xs)">社群陪伴</h3>
+          <p style="color:var(--text-light);font-size:0.85rem;margin-bottom:var(--space-sm)">有互动需求</p>
+          <p style="line-height:1.8">建立护青家长群，每天分享心育知识，定期线上分享会。志愿者一对一陪伴家长。很多家长自己也很焦虑，需要一个地方说说心里话。</p>
+        </div>
+        <div class="card card-silver fade-in">
+          <h3 style="margin-bottom:var(--space-xs)">线下调理</h3>
+          <p style="color:var(--text-light);font-size:0.85rem;margin-bottom:var(--space-sm)">北京朝阳门店</p>
+          <p style="line-height:1.8">铁一锤古法情绪释放手法，亲子同步调理。家长和孩子同时做，效果更好。不强求，能来就来，来不了远程一样有效。</p>
+        </div>
+        <div class="card card-silver fade-in">
+          <h3 style="margin-bottom:var(--space-xs)">城隍使者同步护持</h3>
+          <p style="color:var(--text-light);font-size:0.85rem;margin-bottom:var(--space-sm)">每周固定时间</p>
+          <p style="line-height:1.8">城隍使者同步为在案青少年持诵对应司名的护法祈请文。每月朔望日做大回向，统一加持。</p>
+        </div>
+      </div>
+
+      <!-- 个案跟踪流程 -->
+      <h3 class="section-title"><span class="icon">📋</span>个案跟踪流程</h3>
+      <div class="card fade-in">
+        <ul class="func-list">
+          <li>家长通过微信报名</li>
+          <li>填写基本信息表（化名、年龄、主要表现、是否就医）</li>
+          <li>城隍使者登记入案，分配专属护持编号</li>
+          <li>远程加持启动（每日回向中列入编号）</li>
+          <li>对应心育六司的持诵功课同步启动</li>
+          <li>每七天跟踪一次（家长反馈孩子近一周的变化）</li>
+        </ul>
+      </div>
+
     </div>
+  </main>
 
-    <!-- 心育六司 -->
-    <h2 class="section-title">❤️ 心育六司 · 专为青少年设立</h2>
-    <p class="text-center fs-small mb-20" style="color: #6b4f3a;">
-      城市青少年面临学业压力、心理困扰、网络沉迷等问题，心育六司专为此而设
-    </p>
-    <div class="xinyu-grid" id="xinyu-grid"></div>
-
-    <!-- 服务方式 -->
-    <h2 class="section-title">📋 服务方式</h2>
-    <div style="max-width:720px;margin:0 auto;">
-      <ol class="steps">
-        <li>
-          <strong>了解学习</strong>
-          <p style="font-size:0.85rem;color:var(--brown-light);margin-top:4px;">浏览本网站，了解四十二司职能，找到对应的司署</p>
-        </li>
-        <li>
-          <strong>诚心祈请</strong>
-          <p style="font-size:0.85rem;color:var(--brown-light);margin-top:4px;">使用祈请文生成器，按自身情况填写，诚心念诵</p>
-        </li>
-        <li>
-          <strong>坚持功课</strong>
-          <p style="font-size:0.85rem;color:var(--brown-light);margin-top:4px;">按照功课仪轨，每日坚持早课晚课，朔望日加诵</p>
-        </li>
-        <li>
-          <strong>正念生活</strong>
-          <p style="font-size:0.85rem;color:var(--brown-light);margin-top:4px;">在日常生活中保持正心正念，配合实际行动改变</p>
-        </li>
-        <li>
-          <strong>分享传递</strong>
-          <p style="font-size:0.85rem;color:var(--brown-light);margin-top:4px;">将法脉分享给有需要的人，让更多青少年受益</p>
-        </li>
-      </ol>
-    </div>
-
-    <!-- 适用人群 -->
-    <h2 class="section-title">👥 适用人群</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>🧑 青少年</h3>
-        <p>学业压力大、情绪困扰、网络沉迷、社交恐惧、自我认同困惑等</p>
-      </div>
-      <div class="card">
-        <h3>👨‍👩‍👧 家长</h3>
-        <p>孩子叛逆、亲子沟通困难、孩子心理健康问题、教育焦虑等</p>
-      </div>
-      <div class="card">
-        <h3>🧑‍🏫 教育工作者</h3>
-        <p>关注学生心理健康的老师、辅导员，可用法脉为学生祈请加持</p>
-      </div>
-      <div class="card">
-        <h3>🌍 全球华人</h3>
-        <p>不限地域，全球华人青少年皆可祈请，法脉无远弗届</p>
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <p>☯ 城隍法脉疗愈 · 免费为全球青少年身心疗愈</p>
-    <p style="margin-top: 4px; font-size: 0.8rem;">
-      铁一锤大愿 · 不问来处 · 不取分文 · 以慈度众
-    </p>
-    <p style="margin-top: 12px; font-size: 0.75rem; color: rgba(255,255,255,0.4);">
-      本网站仅供公益学习交流 · 不涉及宗教组织
-    </p>
+  <footer>
+    <div class="footer-brand">城隍法脉 · 二十一司护法系统</div>
+    <div class="footer-oath">冥阳苦未尽 · 誓不成佛道 · 十方若有苦 · 寻声必救度</div>
+    <p>纯公益平台 · 不收取任何费用 · 不替代医疗诊断与治疗</p>
+    <p style="margin-top:var(--space-md);opacity:0.5">铁一锤极简手法 · 北京朝阳</p>
   </footer>
 
-  <div class="toast"></div>
+  <button class="back-top">↑</button>
 
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
   <script>
-    var grid = document.getElementById('xinyu-grid');
+    var heartIds = [5, 6, 2, 7, 1, 20];
+    var grid = document.getElementById('heart-six-grid');
     if (grid) {
-      XINYU_SIX.forEach(function(item) {
-        var div = document.createElement('div');
-        div.className = 'xinyu-card';
-        div.innerHTML = '<div class="xy-icon">' + item.icon + '</div>' +
-          '<h4>' + item.name + '</h4>' +
-          '<p>' + item.desc + '</p>';
-        grid.appendChild(div);
+      var html = '';
+      heartIds.forEach(function(id) {
+        var si = SIXI_DATA[id - 1];
+        if (!si) return;
+        html += '<div class="card card-gold fade-in">' +
+          '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:var(--space-sm)">' +
+            '<div><span style="font-size:0.8rem;color:var(--gold)">第' + (id < 10 ? '0' : '') + id + '司</span>' +
+            '<h3 style="margin:0.25rem 0">' + si.name + '</h3></div>' +
+            '<span class="tag tag-youth">护青重点</span>' +
+          '</div>' +
+          '<p style="color:var(--text-light);font-size:0.85rem;margin-bottom:var(--space-sm)">' + si.god1 + (si.god2 ? ' · ' + si.god2 : '') + '</p>' +
+          '<p style="font-size:0.9rem">' + si.desc + '</p>' +
+          '<a href="pages/' + si.name + '.html" style="color:var(--gold);text-decoration:none;font-size:0.85rem;display:inline-block;margin-top:var(--space-sm)">查看详情 →</a>' +
+        '</div>';
       });
+      grid.innerHTML = html;
     }
-  </script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js');
-    }
+    if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js'); }
   </script>
 </body>
 </html>

@@ -100,7 +100,7 @@
       document.getElementById('breadcrumb-current').textContent = si.name;
 
       // 合并两套数据生成四十二司导航
-      var allSi = SI_DATA.concat(SIXI_DATA);
+      var allSi = SIXI_DATA;
       var navEl = document.getElementById('si-nav');
       if (navEl) {
         var html = '';

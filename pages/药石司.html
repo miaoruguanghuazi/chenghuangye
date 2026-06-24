@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>司详情 - 城隍法脉·四十二司护法系统</title>
+  <title>司详情 - 城隍法脉·二十一司护法系统</title>
   <link rel="stylesheet" href="../css/style.css">
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap");
@@ -18,9 +18,12 @@
       <button class="nav-toggle" aria-label="切换导航">☰</button>
       <ul class="nav-links">
         <li><a href="../index.html">首页</a></li>
-        <li><a href="../all-si.html">四十二司</a></li>
-        <li><a href="../protect-youth.html">护青</a></li>
+        <li><a href="../all-si.html">二十一司</a></li>
+        <li><a href="../about.html">认识法脉</a></li>
+        <li><a href="../protect-youth.html">护青公益</a></li>
+        <li><a href="../rituals.html">功课仪轨</a></li>
         <li><a href="../prayer-generator.html">祈请文</a></li>
+        <li><a href="../contact.html">关于</a></li>
       </ul>
     </div>
   </nav>
@@ -30,7 +33,7 @@
 
     <!-- 面包屑 -->
     <div class="breadcrumb">
-      <a href="../index.html">首页</a> / <a href="../all-si.html">四十二司</a> / <span id="breadcrumb-current">司详情</span>
+      <a href="../index.html">首页</a> / <a href="../all-si.html">二十一司</a> / <span id="breadcrumb-current">司详情</span>
     </div>
 
     <!-- 司头部 -->
@@ -65,7 +68,7 @@
 
     <!-- 司导航 -->
     <section class="card" style="text-align:center;">
-      <h2 class="section-title" style="text-align:center;"><span class="icon">☸</span>四十二司导航</h2>
+      <h2 class="section-title" style="text-align:center;"><span class="icon">☸</span>二十一司导航</h2>
       <div id="si-nav" class="tags" style="justify-content:center;margin-top:1rem;"></div>
     </section>
 
@@ -73,7 +76,7 @@
 
   <!-- ===== 页脚 ===== -->
   <footer>
-    <div class="footer-brand">城隍法脉 · 四十二司护法系统</div>
+    <div class="footer-brand">城隍法脉 · 二十一司护法系统</div>
     <div class="footer-oath">冥阳苦未尽，誓不成佛道；十方若有苦，寻声必救度</div>
     <p>南无幽冥教主地藏王菩萨 &nbsp;·&nbsp; 南无护法韦驮尊天菩萨</p>
     <p style="margin-top:0.5rem;">当境城隍尊神 &nbsp;·&nbsp; 土地正神 &nbsp;·&nbsp; 家宅六神</p>
@@ -91,16 +94,15 @@
       var filename = window.location.pathname.split('/').pop();
       var siName = filename.replace('.html', '');
 
-      // 同时查询 SI_DATA（新增21司）和 SIXI_DATA（原有21司）
-      var si = SI_DATA.find(function(s) { return s.name === siName; })
-            || SIXI_DATA.find(function(s) { return s.name === siName; });
+      // 从 SIXI_DATA 查找对应司
+      var si = SIXI_DATA.find(function(s) { return s.name === siName; });
 
-      if (!si) si = SI_DATA[0] || SIXI_DATA[0];
+      if (!si) si = SIXI_DATA[0];
       renderSiPage(si);
       document.getElementById('breadcrumb-current').textContent = si.name;
 
-      // 合并两套数据生成四十二司导航
-      var allSi = SI_DATA.concat(SIXI_DATA);
+      // 合并两套数据生成二十一司导航
+      var allSi = SIXI_DATA;
       var navEl = document.getElementById('si-nav');
       if (navEl) {
         var html = '';

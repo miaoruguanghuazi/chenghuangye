@@ -3,238 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="城隍法脉功课仪轨 · 早课 · 晚课 · 朔望日 · 莲花救度">
+  <meta name="description" content="城隍法脉功课仪轨 — 每日早课、晚课、朔望日总祈请、急难加诵。">
   <title>功课仪轨 · 城隍法脉</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#F5F0EB">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap');</style>
 </head>
 <body>
-
-  <nav class="nav-bar">
+  <nav>
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">☯ 城隍法脉</a>
-      <button class="nav-toggle" aria-label="菜单">☰</button>
+      <a href="index.html" class="nav-brand">城隍<span>法脉</span></a>
+      <button class="nav-toggle">☰</button>
       <ul class="nav-links">
         <li><a href="index.html">首页</a></li>
-        <li><a href="all-si.html">四十二司</a></li>
+        <li><a href="all-si.html">二十一司</a></li>
         <li><a href="about.html">认识法脉</a></li>
         <li><a href="protect-youth.html">护青公益</a></li>
         <li><a href="rituals.html" class="active">功课仪轨</a></li>
-        <li><a href="prayer-generator.html">祈请文生成</a></li>
+        <li><a href="prayer-generator.html">祈请文</a></li>
         <li><a href="contact.html">关于</a></li>
       </ul>
     </div>
   </nav>
 
-  <section class="page-header">
-    <h1>📿 功课仪轨</h1>
-    <p>早课 · 晚课 · 朔望日 · 急难加诵 · 莲花救度</p>
-  </section>
-
-  <div class="container section">
-    <!-- 早课 -->
-    <h2 class="section-title">🌅 早课仪轨（清晨）</h2>
-    <div style="max-width:720px;margin:0 auto 40px;">
-      <div class="prayer-box">
-        <div class="prayer-label">『 早课祈请文 』</div>
-        <div class="prayer-text" id="morning-prayer">
-          清晨起床，洗漱净面后，面向东方，合掌恭敬
-
-          【净心咒】（3遍）
-          城隍座下，四十二司护法
-          弟子/信女 ___ 诚心上达
-          愿以此功德，庄严自身心
-          今日行一切善，持一切戒
-          利益一切众生
-
-          【祈请文】
-          城隍座下 阴阳司公 速报司公 功德司公
-          赏善司公 巡察司公 护青司公
-          暨四十二司护法圣众
-
-          弟子/信女 ___ 今晨虔诚祈请
-          愿今日所行皆顺正道
-          所言皆利他人
-          所念皆存慈悲
-
-          愿护青司加持天下青少年
-          身心健康 智慧开明
-          远离迷途 正直向上
-
-          愿以此功德
-          回向一切众生
-          普皆离苦得乐
-
-          弟子/信女 ___ 九拜
-        </div>
-        <button class="copy-btn" onclick="copyText('morning-prayer')">📋 复制</button>
+  <main>
+    <div class="container">
+      <div class="page-header fade-in">
+        <h1>功课仪轨</h1>
+        <p>每日早课 · 晚课回向 · 朔望日总祈请 · 急难加诵</p>
       </div>
-    </div>
 
-    <!-- 晚课 -->
-    <h2 class="section-title">🌙 晚课仪轨（睡前）</h2>
-    <div style="max-width:720px;margin:0 auto 40px;">
-      <div class="prayer-box">
-        <div class="prayer-label">『 晚课回向文 』</div>
-        <div class="prayer-text" id="evening-prayer">
-          睡前洗漱后，安静端坐，合掌
+      <!-- 每日早课 -->
+      <div class="card card-gold fade-in">
+        <h3 class="section-title"><span class="icon">🌅</span>每日早课仪轨</h3>
+        <div class="prayer-text" style="line-height:2.2;white-space:pre-wrap">
+弟子___（法号___），一心顶礼。
 
-          【反省】
-          今日所作所言所念
-          若有善者，愿增长之
-          若有恶者，愿忏悔之
+愿以此心，代佛行化；愿以此身，代当境城隍、土地、山神及家宅六神护佑一方。
 
-          【回向】
-          城隍座下 四十二司护法
-          弟子/信女 ___ 今日功课圆满
-          愿以此功德
-          回向一切青少年
-          身心健康 学业进步
-          家庭和睦 前程光明
+冥阳苦未尽，誓不成佛道；十方若有苦，寻声必救度。
 
-          回向一切有缘众生
-          离苦得乐 早证菩提
+今发正心正念，恭请城隍法脉二十一司护法，慈悲降临，威光护持。
 
-          回向自身
-          业消慧朗 福慧双增
+【总枢皈依】
+南无幽冥教主地藏王菩萨
+南无护法韦驮尊天菩萨
+当境城隍尊神、土地正神、家宅六神、天龙鬼神善神护法等众
+慈悲证知，总摄威光，降临道场，护持此祈。
 
-          【感恩】
-          感恩城隍尊神
-          感恩四十二司护法
-          感恩铁一锤大愿
-          感恩一切善缘
+【二十一司分请】
+（此处加诵当日对应的司祈请段落，每日一司或数司均可）
 
-          弟子/信女 ___ 九拜
+【回向】
+愿以此祈请功德，回向当境城隍尊神、土地正神、二十一司护法、家宅六神，
+以及十方三世一切诸佛菩萨、七世父母六亲眷属、所有冤亲债主，
+和已度未度当度的一切众生。
+愿所有众生离苦得乐，速得解脱，早成佛道。
+
+冥阳苦未尽，誓不成佛道；十方若有苦，寻声必救度。
+
+弟子___顶礼 🙏🙏🙏
         </div>
-        <button class="copy-btn" onclick="copyText('evening-prayer')">📋 复制</button>
+        <button class="copy-btn" onclick="copyText(this.previousElementSibling.textContent, this)" style="margin-top:var(--space-sm)">复制早课全文</button>
       </div>
-    </div>
 
-    <!-- 朔望日 -->
-    <h2 class="section-title">📅 朔望日仪轨（初一·十五）</h2>
-    <div style="max-width:720px;margin:0 auto 40px;">
-      <div class="prayer-box">
-        <div class="prayer-label">『 朔望日加诵 』</div>
-        <div class="prayer-text" id="suwang-prayer">
-          朔望之日（农历初一、十五）
-          宜素食净口，恭敬加诵
+      <!-- 朔望日总祈请 -->
+      <div class="card card-gold fade-in">
+        <h3 class="section-title"><span class="icon">📅</span>朔望日完整仪轨</h3>
+        <p style="color:var(--text-light);font-size:0.9rem;margin-bottom:var(--space-sm)">每月初一、十五，完整诵持二十一司全仪轨一遍，回向法界</p>
+        <div class="prayer-text" style="line-height:2.2;white-space:pre-wrap">
+【净心发愿】→【总枢皈依】→【二十一司分请（完整21司）】→【总摄祈请】→【回向结言】
 
-          先诵早课一遍
+完整二十一司分请包含以下各司段落：
+第一·外感司  第二·时疫司  第三·脏腑司  第四·外伤司
+第五·心识司  第六·安寝司  第七·药石司  第八·财运司
+第九·姻缘司  第十·求子生育司  第十一·学业司  第十二·出行司
+第十三·口舌司  第十四·戒除恶习司  第十五·禳灾司  第十六·度厄司
+第十七·冥阳司  第十八·善终司  第十九·育幼养老司  第二十·家宅司
+第二十一·监察司
 
-          再加诵：
-          城隍座下 四十二司护法
-          弟子/信女 ___ 朔望之日虔诚加诵
+各司段落格式：
+弟子一心奉请：【神明1】、【神明2】
+伏愿【职能1】，【职能2】，【职能3】，【职能4】。
+令弟子及一切众生远离【司名】相关之苦，身心安泰。
 
-          愿以此日功德
-          增长福慧 消除业障
-          护持青少年 普利群生
+【总摄祈请】
+以上二十一司护法，已请降临。伏愿各司各主，各尽其职，威光交映，冥阳两利。
+弟子代佛行化，代城隍土地护佑一方；神明予弟子威光，弟子代神明负重。
+但行好事，莫问前程。
 
-          （以下可选诵）
-          祈请阴阳司调和身心
-          祈请功德司记录善行
-          祈请度厄司消灾免难
-          祈请解冤司化解冤结
-          祈请护青司护佑青少年
-          祈请济度司广度有情
+【回向结言】
+愿以此祈请功德，回向一切众生离苦得乐，愿速得解脱，早成佛道。
+冥阳苦未尽，誓不成佛道；十方若有苦，寻声必救度。
 
-          弟子/信女 ___ 九拜
+【恭请鉴察】
+南无幽冥教主地藏王菩萨
+南无护法韦驮尊天菩萨
+当境城隍尊神、土地正神、二十一司护法、家宅六神鉴察
+弟子___顶礼 🙏🙏🙏
         </div>
-        <button class="copy-btn" onclick="copyText('suwang-prayer')">📋 复制</button>
+        <button class="copy-btn" onclick="copyText(this.previousElementSibling.textContent, this)" style="margin-top:var(--space-sm)">复制朔望日全文</button>
       </div>
-    </div>
 
-    <!-- 急难加诵 -->
-    <h2 class="section-title">🆘 急难加诵</h2>
-    <div style="max-width:720px;margin:0 auto 40px;">
-      <div class="prayer-box">
-        <div class="prayer-label">『 急难祈请文 』</div>
-        <div class="prayer-text" id="emergency-prayer">
-          遇急难之事，不拘时地
-          收摄心神，虔诚默念或出声诵持
-
-          城隍座下 ___司公（选对应司号）
-          弟子/信女 ___ 急难祈请
-          恳请司公慈悲救护
-          ___（简述急难之事）
-
-          伏愿
-          转危为安 化险为夷
-          诸灾消散 平安吉祥
-
-          （可反复念诵司公名号至心安定）
+      <!-- 急难专项加诵 -->
+      <div class="card card-gold fade-in">
+        <h3 class="section-title"><span class="icon">🆘</span>急难专项加诵</h3>
+        <p style="color:var(--text-light);font-size:0.9rem;margin-bottom:var(--space-sm)">遇急难之事，于总祈请后加诵对应司段落三遍至九遍，至症状缓解</p>
+        <div class="grid grid-2">
+          <div class="card card-silver">
+            <h4>心神不安</h4>
+            <p style="font-size:0.85rem;color:var(--text-light)">加诵 <strong>心识司</strong> 段落三遍</p>
+          </div>
+          <div class="card card-silver">
+            <h4>失眠噩梦</h4>
+            <p style="font-size:0.85rem;color:var(--text-light)">加诵 <strong>安寝司</strong> 段落三遍</p>
+          </div>
+          <div class="card card-silver">
+            <h4>身体不适</h4>
+            <p style="font-size:0.85rem;color:var(--text-light)">加诵 <strong>时疫司</strong> 或 <strong>外感司</strong> 段落</p>
+          </div>
+          <div class="card card-silver">
+            <h4>家宅不安</h4>
+            <p style="font-size:0.85rem;color:var(--text-light)">加诵 <strong>家宅司</strong> 段落七遍</p>
+          </div>
+          <div class="card card-silver">
+            <h4>恶习难改</h4>
+            <p style="font-size:0.85rem;color:var(--text-light)">加诵 <strong>戒除恶习司</strong> 段落九遍</p>
+          </div>
+          <div class="card card-silver">
+            <h4>考试求智</h4>
+            <p style="font-size:0.85rem;color:var(--text-light)">加诵 <strong>学业司</strong> 段落七遍</p>
+          </div>
         </div>
-        <button class="copy-btn" onclick="copyText('emergency-prayer')">📋 复制</button>
       </div>
-      <p class="fs-small" style="color:var(--brown-light);margin-top:8px;">
-        💡 急难时先求对应司署：度厄司（消灾）、驱邪司（驱邪）、解冤司（化解纠纷）、追魂司（受惊收惊）
-      </p>
-    </div>
 
-    <!-- 莲花救度 -->
-    <h2 class="section-title">🌸 莲花救度仪轨</h2>
-    <div style="max-width:720px;margin:0 auto;">
-      <div class="prayer-box">
-        <div class="prayer-label">『 莲花救度仪轨 』</div>
-        <div class="prayer-text" id="lotus-prayer">
-          此仪轨专为救度重病、抑郁、昏迷、失志之人
-
-          【准备】
-          净水一杯，鲜花一朵（或以意念观想莲花）
-          于患者床头或安静处
-
-          【祈请】
-          南无城隍尊神
-          南无四十二司护法
-          南无济度司公
-          南无度厄司公
-
-          弟子/信女 ___ 今为 ___（患者名）祈请
-          愿以清净心 供养莲花
-          愿以慈悲心 救度苦难
-
-          【诵持】（7遍或21遍）
-          莲花开放 光明遍照
-          身心清净 业障消除
-          城隍加持 司公护佑
-          离苦得乐 平安吉祥
-
-          【回向】
-          愿以此功德
-          救度 ___（患者名）
-          身心康复 重获光明
-          若缘未尽 早日康健
-          若缘已尽 安然往生
-
-          济度司公慈悲接引
-          度厄司公慈悲护持
-
-          弟子/信女 ___ 九拜
-        </div>
-        <button class="copy-btn" onclick="copyText('lotus-prayer')">📋 复制</button>
+      <!-- 持诵须知 -->
+      <div class="card fade-in">
+        <h3 class="section-title"><span class="icon">📖</span>持诵须知</h3>
+        <ul class="func-list">
+          <li><strong>日常总祈请</strong>：每日早课诵一遍</li>
+          <li><strong>朔望日</strong>：完整诵持二十一司全仪轨一遍，回向法界</li>
+          <li><strong>急难专项祈请</strong>：遇何疾苦，即于总祈请后，加诵该司段落三遍至九遍</li>
+          <li><strong>求子专项</strong>：每月朔望日，加诵求子生育司九遍，回向子嗣良缘</li>
+          <li>弟子谨遵天道之命，一日一思，久久为功</li>
+        </ul>
       </div>
-    </div>
-  </div>
 
-  <footer class="footer">
-    <p>☯ 城隍法脉疗愈 · 免费为全球青少年身心疗愈</p>
-    <p style="margin-top: 12px; font-size: 0.75rem; color: rgba(255,255,255,0.4);">
-      本网站仅供公益学习交流 · 不涉及宗教组织
-    </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-brand">城隍法脉 · 二十一司护法系统</div>
+    <div class="footer-oath">冥阳苦未尽 · 誓不成佛道 · 十方若有苦 · 寻声必救度</div>
+    <p>纯公益平台 · 不收取任何费用 · 不替代医疗诊断与治疗</p>
   </footer>
 
-  <div class="toast"></div>
+  <button class="back-top">↑</button>
 
+  <script src="js/data.js"></script>
   <script src="js/main.js"></script>
   <script>
-    function copyText(id) {
-      var el = document.getElementById(id);
-      if (el) copyToClipboard(el.textContent);
-    }
-  </script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js');
-    }
+    if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js'); }
   </script>
 </body>
 </html>
